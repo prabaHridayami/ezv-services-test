@@ -1,11 +1,8 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
 
 import { getAllProducts } from "../helpers/api-util";
 import { GetStaticProps } from "next";
 import Link from "next/link";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export interface ProductProps {
   id: BigInteger;
