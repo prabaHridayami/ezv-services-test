@@ -26,17 +26,17 @@ const Home = (props: HomeProps) => {
   const { products } = props;
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between md:p-24">
       {products.map((item) => (
         <Link
           href={`/${item.id}`}
           passHref
           className="flex flex-col md:flex-row border-bottom border-b-2 boder-b-black p-3 md:p-6 w-full gap-6 hover:bg-gray-50"
         >
-          <div className="relative bg-gray-100 text-center h-60 w-80">
+          <div className="relative bg-gray-100 text-center h-60 md:w-80">
             <Image
               layout="fill"
-              objectFit="contain"
+              objectFit="cover"
               src={item.thumbnail}
               alt={item.title}
             />

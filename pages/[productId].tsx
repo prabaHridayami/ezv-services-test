@@ -59,7 +59,12 @@ const ProductDetail = (props: DetailProps) => {
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-10 gap-6">
         {product.images.map((image, i) => (
           <div key={i} className="relative h-[12rem]">
-            <Image src={image} alt={product.title} layout="fill" />
+            <Image
+              src={image}
+              alt={product.title}
+              layout="fill"
+              objectFit="cover"
+            />
           </div>
         ))}
       </div>
